@@ -1,0 +1,38 @@
+<table>
+  <tr>
+    <td>Name</td>
+    <td>Team</td>
+    <td>0</td>
+    <td>1</td>
+    <td>2</td>
+    <td>3</td>
+    <td>4</td>
+    <td>5</td>
+    <td>6</td>
+    <td>7</td>
+    <td>8</td>
+    <td>9</td>
+    <td>10</td>
+    <td>11</td>
+    <td>12</td>
+  <tr>
+  <% @teams.each do |team|%>
+    <tr>
+      <td><%= team.name %>
+      <td><%= team.team %></td>
+      <td><%= team.zero ? "&#10003;".html_safe : "&#10005;".html_safe %></td>
+      <td><%= team.one ? "&#10003;".html_safe : "&#10005;".html_safe %></td>
+      <td><%= team.two ? "&#10003;".html_safe : "&#10005;".html_safe %></td>
+      <td><%= team.three ? "&#10003;".html_safe : "&#10005;".html_safe %></td>
+      <td><%= team.four ? "&#10003;".html_safe : "&#10005;".html_safe %></td>
+      <td><%= team.five ? "&#10003;".html_safe : "&#10005;".html_safe %></td>
+      <td><%= team.six ? "&#10003;".html_safe : "&#10005;".html_safe %></td>
+      <td><%= team.seven ? "&#10003;".html_safe : "&#10005;".html_safe %></td>
+      <td><%= team.eight ? "&#10003;".html_safe : "&#10005;".html_safe %></td>
+      <td><%= team.nine ? "&#10003;".html_safe : "&#10005;".html_safe %></td>
+      <td><%= team.ten ? "&#10003;".html_safe : "&#10005;".html_safe %></td>
+      <td><%= team.eleven ? "&#10003;".html_safe : "&#10005;".html_safe %></td>
+      <td><%= team.twelve ? "&#10003;".html_safe : "&#10005;".html_safe %></td>
+    </tr>
+  <% end %>
+<table>
