@@ -21,7 +21,7 @@ module Parsers
       games = json["data"]["games"]["game"]
 
       games.each do |game|
-        if game["linescore"]
+        if game["status"]["status"] == "Final"
           home_team = game["home_team_name"]
           away_team = game["away_team_name"]
           home_score = game["linescore"]["r"]["home"]
@@ -42,7 +42,7 @@ module Parsers
     end
 
     def retrieve_data
-      now = 24.hours.ago
+      now = Time.now
       month = now.month
       day = now.day
       day_prefix = ""

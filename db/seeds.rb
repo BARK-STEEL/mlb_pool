@@ -38,7 +38,36 @@ teams = ["D-backs",
          "Blue Jays",
          "Nationals"]
 
-names = ("a".."z").to_a + ["aa", "bb", "cc", "dd"]
+names = ["Skip",
+         "Roy",
+         "Dago",
+         "Kelvin",
+         "Stonecold",
+         "Kabeza",
+         "Ferny",
+         "Gato Jr.",
+         "CT",
+         "Gato Sr.",
+         "Cams",
+         "Hustlehard",
+         "Angel",
+         "Big Mike",
+         "Hobo",
+         "Chino",
+         "Mike T.",
+         "Mitch",
+         "Mario",
+         "Frank",
+         "Nigel",
+         "Greg & Vic",
+         "Gene",
+         "Michael R",
+         "Chicho",
+         "Orlandito",
+         "Edwin",
+         "Roberto",
+         "Damien",
+         "Juan"]
 
 teams.each_with_index do |team, i|
   Team.create(name: names[i], team: team)
