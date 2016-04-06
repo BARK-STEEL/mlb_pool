@@ -21,7 +21,7 @@ module Parsers
       games = json["data"]["games"]["game"]
 
       games.each do |game|
-        if game["status"]["status"] == "Final"
+        if game["status"]["status"] == "Final" || game["status"]["status"] == "Game Over"
           home_team = game["home_team_name"]
           away_team = game["away_team_name"]
           home_score = game["linescore"]["r"]["home"]
