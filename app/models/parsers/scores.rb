@@ -42,7 +42,7 @@ module Parsers
     end
 
     def retrieve_data
-      now = Time.now
+      now = 24.hours.ago
       month = now.month
       day = now.day
       day_prefix = ""
